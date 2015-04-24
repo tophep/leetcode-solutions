@@ -1,5 +1,5 @@
 import operator
-# Solutions to problems at https://oj.leetcode.com/problemset/algorithms/
+# Solutions to problems at https://leetcode.com/problemset/algorithms/
 class LeetSolutions:
 
     def reverseBits(self, n):
@@ -216,10 +216,10 @@ class LeetSolutions:
     # Your code should preferably run in O(n) time and use only O(1) memory
     
     # Definition for singly-linked list.
-    # class ListNode:
-    #     def __init__(self, x):
-    #         self.val = x
-    #         self.next = None
+    class ListNode:
+        def __init__(self, x):
+            self.val = x
+            self.next = None
 
     class Solution:
         # @param two ListNodes
@@ -346,11 +346,6 @@ class LeetSolutions:
                 stack.append(-ops[token](left, right) if neg else ops[token](left, right))
             else: stack.append(int(token))
         return stack.pop()
-
-    
-
-solutions = LeetSolutions()
-print solutions.reverseBits(1)
 
 
 
